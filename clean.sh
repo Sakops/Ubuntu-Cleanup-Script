@@ -22,6 +22,8 @@ sudo apt-get clean
 sudo apt-get -s clean
 sudo apt-get clean all
 sudo apt-get autoclean
+sudo journalctl --vacuum-time=500M
+history -c
 
 #Remove Old Log Files
 sudo rm -f /var/log/*gz
